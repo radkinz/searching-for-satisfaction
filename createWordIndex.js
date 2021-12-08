@@ -35,6 +35,6 @@ for (let i = 0; i < songs.length; i++) {
 }
 
 //write to word index file in json form
-fs.writeFileSync("./wordIndex.txt", JSON.stringify(words));
+fs.writeFileSync("./wordIndex.txt", JSON.stringify(words, null, 2));
 
 //if you want to check what this index looks like in object form then console.log(JSON.parse(fs.readFileSync("wordIndex.txt")))
