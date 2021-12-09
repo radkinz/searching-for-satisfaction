@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Searching for Satisfaction</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <h1>
+    <!-- opening/ title -->
+    Searching for Satisfaction
+  </h1>
+  <div id="title">
+    HSE Quarter Two Final Project (Ruby Adkins, Jack DeVillier, Jack Dozier, and
+    Liam Robertson)
+    <br />
+    <img src="./images/Larry.png" alt="Larry" />
+    <img src="./images/FUNNY.png" alt="meme" />
+    <br />
+  </div>
+  <div id="description">
+    <!-- descrption -->
+    Have you ever wanted a specific song to match your vibe? Whether you said
+    yes or no to that query, you can easily find your next favorite song here.
+    Simply enter any word into the text box below, click submit, and await your
+    next favorite song.
+    <br />
+    <br />
+  </div>
+  <form action="/searchWord" id="submit" method="post">
+    <!-- inputs -->
+    <input type="text" name="input_text" />
+    <button type="submit">Submit</button>
+    <br />
+    <br />
+  </form>
+  <div id="lucky">
+    If you're feeling adventurous, try the "I'm Feeling Lucky" button to get a
+    random song from our database.
+    <br />
+    <button>I'm Feeling Lucky</button>
+    <br /><br />
+  </div>
+  {{#Songs}}
+  <div id="display_text">
+    {{Title}}
+    <br />
+  </div>
+  {{/Songs}}
+  <br />
+  <div id="user_story_header">
+    Theoretical User Stories:
+    <br /><br />
+  </div>
+  <div id="user_stories">
+    As an angsty teen, I would like to get music that can make me feel the
+    emotions that I no longer feel.
+    <br /><br />
+    As a buff athlete who prioritizes sports too much, I want music lyrics that
+    can make me GET IN THE ZONE while I workout.
+    <br /><br />
+    As a student who has succumbed to the mono-toned, lifeless regime of a
+    try-hard, I want music lyrics that can help me concentrate while I study.
+    <br /><br />
+    As a driver, I wish for music that will inspire me to, in fact, stay in my
+    own lane.
+    <br /><br />
+    As someone who has watched "Gilmore Girls" a few too many times, I would
+    like riffs that make all my surroundings seem like Stars Hollow, CT.
+    <br /><br />
+    As a chaotic teen, I want music to inspire and enlighten my inner Olivia
+    Rodrigo.
+    <br /><br />
+    As an introvert, I need music that allows me to stay away from other people
+    as much as possible
+    <br /><br />
+    As an aspiring joyrider, I want to make a playlist that fits driving through
+    the both the country-side and city skylines at 9:00pm
+  </div>
+</html>

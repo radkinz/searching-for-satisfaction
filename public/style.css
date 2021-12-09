@@ -1,0 +1,53 @@
+body {
+  /* background-color: purple; */
+}
+
+html {
+  background-image: url('./images/back1.png');
+}
+
+* {
+  font-family: 'Georgia';
+}
+h1 {
+  text-align: center;
+  font-weight: 50;
+  color: red;
+}
+#description {
+  text-align: center;
+  color: blue;
+}
+#submit {
+  text-align: center;
+}
+#title {
+  text-align: center;
+  color: blueviolet;
+}
+#display_text {
+  text-align: center;
+  font-weight: bold;
+  color: aquamarine;
+}
+#lucky {
+  text-align: center;
+  font-style: italic;
+  color: chartreuse;
+}
+#lucky_button {
+  text-align: center;
+}
+#user_story_header {
+  font-weight: bold;
+  font-size: 15pt;
+  color: mediumspringgreen;
+}
+#user_stories {
+  font-style: italic;
+  color: mediumspringgreen;
+}
+img {
+  width: 75px;
+  height: 75px;
+}
