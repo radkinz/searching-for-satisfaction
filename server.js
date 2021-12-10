@@ -5,6 +5,9 @@ const express = require('express')
 const app = express()
 const http = require('http').Server(app)
 const bodyParser = require('body-parser')
+const config = require("dotenv").config()
+
+const YOUTUBE_API_KEY=process.env.API_KEY
 
 app.use(express.static('public'))
 
@@ -24,6 +27,11 @@ app.get('/', (req, res) => {
 app.post('/searchWord', (req, res) => {
   res.render('song.html', {Songs: {Title: grabsongs(req.body.input_text)}});
 })
+
+app.get('/apikey', (req, res) => {
+  res.send(YOUTUBE_API_KEY);
+  res.end();
+});
 
 //grab word index
 let wordIndex = JSON.parse(fs.readFileSync('wordIndex.txt'))
@@ -55,6 +63,11 @@ function grabsongs (words) {
   let sortedrankings = Object.keys(finalrankings).sort(function (a, b) {
     return finalrankings[b] - finalrankings[a]
   })
+
+  //if list longer than 20....shorten it
+  if (sortedrankings.length > 10) {
+    sortedrankings = sortedrankings.splice(0, 10);
+  }
 
   //check if empty
   if (sortedrankings.length == 0) {
