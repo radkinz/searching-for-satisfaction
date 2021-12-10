@@ -18,11 +18,11 @@ app.engine('html', engines.hogan)
 app.set('views', __dirname + '/views')
 
 app.get('/', (req, res) => {
-  res.render('index.html', {Songs: {Title: "songs will be displayed here"}})
+  res.sendFile(__dirname + "/views/index.html");
 })
 
 app.post('/searchWord', (req, res) => {
-  res.render('index.html', {Songs: {Title: grabsongs(req.body.input_text)}})
+  res.render('song.html', {Songs: {Title: grabsongs(req.body.input_text)}});
 })
 
 //grab word index
