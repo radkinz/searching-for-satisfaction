@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>Searching for Satisfaction</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" async defer></script>
   </head>
   <h1>
     <!-- opening/ title -->
@@ -28,7 +29,7 @@
     <br />
     <br />
   </div>
-  <form action="/searchWord" id="submit" method="post">
+  <form action="/searchWord" id="submit" target="_blank" method="post">
     <!-- inputs -->
     <input type="text" name="input_text" />
     <button type="submit">Submit</button>
@@ -42,12 +43,6 @@
     <button>I'm Feeling Lucky</button>
     <br /><br />
   </div>
-  {{#Songs}}
-  <div id="display_text">
-    {{Title}}
-    <br />
-  </div>
-  {{/Songs}}
   <br />
   <div id="user_story_header">
     Theoretical User Stories:
