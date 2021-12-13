@@ -6,7 +6,6 @@ $(document).ready(function () {
 
     //grab all title names from div
     let titles = $("#display_text").text().split(",");
-    console.log(titles)
 
     //loop through titles and search corresponding videos
     for (let i = 0; i < titles.length; i++) {
