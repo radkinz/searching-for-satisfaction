@@ -9,51 +9,62 @@ html {
 * {
   font-family: 'Tahoma';
 }
+
 h1 {
   text-align: center;
   font-weight: 50;
   font-style: bold;
   color: crimson;
 }
+
 #description {
   text-align: center;
   color: darkslateblue;
 }
+
 #submit {
   text-align: center;
 }
+
 #title {
   text-align: center;
   color: blueviolet;
 }
+
 #lucky {
   text-align: center;
   font-style: italic;
   color: yellowgreen;
 }
+
 #lucky_button {
   text-align: center;
 }
+
 #user_story_header {
   font-weight: bold;
   font-size: 15pt;
   color: rgb(21, 33, 214);
 }
+
 #user_stories {
   font-style: italic;
   color: rgb(19, 16, 168);
   background-color: rgba(238, 260, 250, 0.8);
 }
+
 img {
   width: 75px;
   height: 75px;
 }
+
 html,
 body {
   height: 100%;
   padding: 0;
   margin: 0;
 }
+
 /* Scott Brown stackoverflow  */
 #ruby {
   background: crimson;
@@ -61,18 +72,21 @@ body {
   height: 50%;
   float: left;
 }
+
 #dev {
   background: blueviolet;
   width: 50%;
   height: 50%;
   float: left;
 }
+
 #doz {
   background: darkslateblue;
   width: 50%;
   height: 50%;
   float: left;
 }
+
 #liam {
   background: yellowgreen;
   width: 50%;
