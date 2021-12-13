@@ -25,8 +25,18 @@ app.get('/', (req, res) => {
 })
 
 app.post('/searchWord', (req, res) => {
-  console.log(req.body.input_text)
-  res.render('song.html', {Songs: {Title: grabsongs(req.body.input_text)}});
+  //turn list into obj to render
+  let titles = grabsongs(req.body.input_text);
+  let songs = [];
+  for (let i = 0; i < titles.length; i++) {
+    songs.push({"Title": titles[i]}); 
+  }
+
+  res.render('songlist.html', {Songs: songs});
+})
+
+app.post('/displaySong', (req, res) => {
+  res.render('song.html', {Songs: {Title: req.body.submit}});
 })
 
 app.get('/apikey', (req, res) => {
