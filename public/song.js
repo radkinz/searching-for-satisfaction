@@ -5,7 +5,7 @@ $(document).ready(function () {
     API_KEY = key;
 
     //grab all title names from div
-    let titles = $("#display_text").text().split(",");
+    let titles = $("h1").text().split(",");
 
     //loop through titles and search corresponding videos
     for (let i = 0; i < titles.length; i++) {
