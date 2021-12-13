@@ -3,20 +3,21 @@ body {
 }
 
 html {
-  background-image: url('./images/back1.png');
+  background-image: url('images/back2.png');
 }
 
 * {
-  font-family: 'Georgia';
+  font-family: 'Tahoma';
 }
 h1 {
   text-align: center;
   font-weight: 50;
-  color: red;
+  font-style: bold;
+  color: crimson;
 }
 #description {
   text-align: center;
-  color: blue;
+  color: darkslateblue;
 }
 #submit {
   text-align: center;
@@ -25,15 +26,10 @@ h1 {
   text-align: center;
   color: blueviolet;
 }
-#display_text {
-  text-align: center;
-  font-weight: bold;
-  color: aquamarine;
-}
 #lucky {
   text-align: center;
   font-style: italic;
-  color: chartreuse;
+  color: yellowgreen;
 }
 #lucky_button {
   text-align: center;
@@ -41,13 +37,45 @@ h1 {
 #user_story_header {
   font-weight: bold;
   font-size: 15pt;
-  color: mediumspringgreen;
+  color: rgb(21, 33, 214);
 }
 #user_stories {
   font-style: italic;
-  color: mediumspringgreen;
+  color: rgb(19, 16, 168);
+  background-color: rgba(238, 260, 250, 0.8);
 }
 img {
   width: 75px;
   height: 75px;
+}
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* Scott Brown stackoverflow  */
+#ruby {
+  background: crimson;
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+#dev {
+  background: blueviolet;
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+#doz {
+  background: darkslateblue;
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+#liam {
+  background: yellowgreen;
+  width: 50%;
+  height: 50%;
+  float: left;
 }

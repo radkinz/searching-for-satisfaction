@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/searchWord', (req, res) => {
+  console.log(req.body.input_text)
   res.render('song.html', {Songs: {Title: grabsongs(req.body.input_text)}});
 })
 
