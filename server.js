@@ -7,7 +7,7 @@ const http = require('http').Server(app)
 const bodyParser = require('body-parser')
 const config = require("dotenv").config()
 
-const YOUTUBE_API_KEY=process.env.API_KEY
+const YOUTUBE_API_KEY=process.env.API_KEY;
 
 app.use(express.static('public'))
 
@@ -21,7 +21,7 @@ app.engine('html', engines.hogan)
 app.set('views', __dirname + '/views')
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
+  res.render("index.html", {});
 })
 
 app.post('/searchWord', (req, res) => {
@@ -32,7 +32,7 @@ app.post('/searchWord', (req, res) => {
     songs.push({"Title": titles[i]}); 
   }
 
-  res.render('songlist.html', {Songs: songs});
+  res.render('index.html', {Songs: songs});
 })
 
 app.post('/displaySong', (req, res) => {
@@ -63,7 +63,7 @@ function grabsongs (words) {
     //loop through ranking and add to final rankings
     for (const key in ranking) {
       if (finalrankings[key]) {
-        finalrankings[key] += sq(ranking[key])
+        finalrankings[key] += ranking[key]
       } else {
         finalrankings[key] = ranking[key]
       }

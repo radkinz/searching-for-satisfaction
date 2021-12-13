@@ -43,6 +43,18 @@
     <button>I'm Feeling Lucky</button>
     <br /><br />
   </div>
+
+  <div id="songlist">
+    <!-- songs go here -->
+    {{#Songs}}
+    <div id="display_text">
+      <form method="POST" action="/displaySong">
+        <input type="submit" name="submit" value="{{Title}}" />
+      </form>
+      <br />
+    </div>
+    {{/Songs}}
+  </div>
   <div id="empty"></div>
   <div id="ruby"></div>
   <div id="dev"></div>
