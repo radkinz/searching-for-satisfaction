@@ -1,0 +1,15 @@
+html {
+  color: white;
+  background-image: url('images/back2.png');
+}
+
+* {
+  font-family: 'Tahoma';
+}
+
+h1 {
+  text-align: center;
+  font-weight: 50;
+  font-style: bold;
+  color: crimson;
+}

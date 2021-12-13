@@ -6,19 +6,19 @@
     <title>Searching for Satisfaction</title>
     <link href="song.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="song.js" async defer></script>
+    <script src="client.js" async defer></script>
   </head>
-  {{#Songs}}
   <h1>
     <!-- opening/ title -->
-    Your Song
+    Your Song List
   </h1>
+  {{#Songs}}
   <div id="display_text">
-   {{Title}}
+    <form method="POST" action="/displaySong">
+      <input type="submit" name="submit" value="{{Title}}" />
+    </form>
     <br />
   </div>
   {{/Songs}}
   <br />
-
-  <div id="videos"></div>
 </html>
