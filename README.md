@@ -1,5 +1,5 @@
 # SEARCHING-FOR-STATISFACTION
-An HSE Final Project by Ruby, Jack Dev., Jack Doz., and Liam
+HSE Final Project by Ruby, Jack Dev., Jack Doz., and Liam
 
 ### **_ORIGINAL PLAN_**
 
