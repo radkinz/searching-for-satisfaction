@@ -26,7 +26,7 @@ It should satisfy the user.
 The UI should be easy to understand. 
 The product should be easily accessible. 
 
-###**_OUTCOME AND REFLECTION_**
+### **_OUTCOME AND REFLECTION_**
 //process 
 
 // reflection 
