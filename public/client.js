@@ -1,5 +1,5 @@
 //random possible options
-let options = ['Hungry', 'Funny', '😩', 'Trendy', 'Stellar']
+let options = ['Hungry', 'Funny', 'H*rny', 'Trendy', 'Stellar', 'Emo', 'Big', 'Good', 'Bad', 'Tired', 'Sleepy']
 
 $('#luckybutton').mouseover(function () {
     console.log($('#input_text').val())

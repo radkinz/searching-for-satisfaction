@@ -44,8 +44,14 @@ let phrases = {
   "Hungry" : "banana",
   "Stellar" : "happy",
   "Funny" : "clown",
-  "😩" : "sex",
-  "Trendy" : "new"
+  "H*rny" : "sex",
+  "Trendy" : "new",
+  "Emo" : "hate",
+  'Big' : "champion", 
+  'Good' : 'yeah', 
+  'Bad' : 'cry', 
+  'Tired' : 'tired'
+
 }
 
 app.post('/feelingLucky', (req, res) => {
