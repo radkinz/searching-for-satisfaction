@@ -7,6 +7,8 @@ $(document).ready(function () {
     //grab all title names from div
     let titles = $("h1").text().split(",");
 
+    console.log(titles)
+
     //loop through titles and search corresponding videos
     for (let i = 0; i < titles.length; i++) {
         videoSearch(API_KEY, titles[i], 1);
@@ -23,7 +25,10 @@ function videoSearch (key, search, maxResults) {
             <iframe width="854" height="480" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
             `
 
-        $('#videos').append(video)
+        $('#videos').append(video);
+        console.log(item)
+
+        $("html").css("background-image", "url(" + item.snippet.thumbnails.high.url + ")");
       })
     }
   )
