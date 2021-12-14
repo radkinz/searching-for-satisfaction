@@ -1,7 +1,7 @@
 # SEARCHING-FOR-STATISFACTION
 An HSE Final Project by Ruby, Jack Dev., Jack Doz., and Liam
 
-## **_ORIGINAL PLAN_**
+### **_ORIGINAL PLAN_**
 
 **Description**
 Our product, _Searching for Satisfaction_ (or Lyric Search), allows people to discover music that best caters to their desires and musical tastes. All data will derive from the database [millionsongdataset.com/musixmatch/](url) and will match with the user’s inputted wants. Our project will index lyrics to allow a user to search based on select inputs to be interpreted by our program. We will take, as our minimum viable product, a few words to match the “vibe” (or lyrics) of a specific song. Lyrics will be stemmed, as to make searching (in regards to tenses) more seamless. 
@@ -25,6 +25,7 @@ It could include a video/ audio that is associated with the song on its “page.
 It should satisfy the user. 
 The UI should be easy to understand. 
 The product should be easily accessible. 
+
 //process 
 
 // reflection 
