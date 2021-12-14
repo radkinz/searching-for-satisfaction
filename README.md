@@ -35,7 +35,14 @@ Our product, _Searching for Satisfaction_ (or Lyric Search), allows people to di
 ### **_OUTCOME AND REFLECTION_**
 
 #### **Functional Requirements:**
-
+- [X] It should run without large-scale errors. 
+- [ ] It should take in multiple user inputs, which it can use to search. 
+- [X] It should provide the user with a song that aptly matches their inputs. 
+- [X] It should utilize the inputs to search the index. 
+- [ ] It should count the number of times that a page has been visited. 
+- [X] It should have a ranking algorithm, which can help a user determine which song might be most appropriate for their desired vibe. 
+- [ ] It could be able to have search filters such as “exact phrasing,” which looks through the index for the exact line that has been searched. 
+- [X] It could include a video/ audio that is associated with the song on its “page.”
 ~~*It should run without large-scale errors.~~
 *It should take in multiple user inputs, which it can use to search. 
 ~~*It should provide the user with a song that aptly matches their inputs.~~
