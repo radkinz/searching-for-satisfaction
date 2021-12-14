@@ -132,8 +132,8 @@ function getFreqRanking (word) {
   ranking.reverse()
 
   //if list is longer than 20...cut it
-  if (ranking.length > 20) {
-    ranking = ranking.splice(0, 20)
+  if (ranking.length > 100) {
+    ranking = ranking.splice(0, 100)
   }
 
   //covert odd list format to nice obj format
