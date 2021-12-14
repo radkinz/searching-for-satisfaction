@@ -27,9 +27,9 @@ Our product, _Searching for Satisfaction_ (or Lyric Search), allows people to di
 
 #### **Non-Functional Requirements:**
 
-It should satisfy the user. 
-The UI should be easy to understand. 
-The product should be easily accessible. 
+- [ ] It should satisfy the user. 
+- [ ] The UI should be easy to understand. 
+- [ ] The product should be easily accessible. 
 
 
 ### **_OUTCOME AND REFLECTION_**
@@ -47,7 +47,7 @@ The product should be easily accessible.
 
 #### **Non-Functional Requirements:**
 
-*~~It should satisfy the user. 
-*The UI should be easy to understand. 
-*The product should be easily accessible.~~
+- [X] It should satisfy the user. 
+- [X] The UI should be easy to understand. 
+- [X] The product should be easily accessible.
 
