@@ -76,8 +76,8 @@ function grabsongs (words) {
   })
 
   //if list longer than 20....shorten it
-  if (sortedrankings.length > 10) {
-    sortedrankings = sortedrankings.splice(0, 10);
+  if (sortedrankings.length > 100) {
+    sortedrankings = sortedrankings.splice(0, 100);
   }
 
   //check if empty

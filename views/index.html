@@ -28,14 +28,12 @@
     <br />
     <br />
   </div>
-  <form action="/searchWord" id="submit" method="post">
+  <form action="/searchWord" method="post">
     <!-- inputs -->
-    <input type="text" autocomplete="off" name="input_text" />
+    <input type="text" autocomplete="off" id="inputSubmit" name="input_text" />
     <br />
     <br />
   </form>
-
-<div id="scrollmenu">
   
 </div>
 
@@ -46,21 +44,28 @@
     <button>I'm Feeling Lucky</button>
     <br /><br />
   </div>
-
+<div id="scrollbox">
   <div id="songlist">
     <!-- songs go here -->
     {{#Songs}}
     <div id="display_text">
       <form method="POST" action="/displaySong">
-        <input type="submit" name="submit" value="{{Title}}" />
+        <input id="songbutton" type="submit" name="submit" value="{{Title}}" />
       </form>
       <br />
     </div>
     {{/Songs}}
   </div>
+</div>
   <div id="empty"></div>
   <div id="ruby"></div>
-  <div id="dev"></div>
+  <div id="dev">ITS ABOUT DRIVE 😤
+ITS ABOUT POWER 🔥
+WE STAY HUNGRY😈
+WE DEVOUR 👹
+PUT IN THE WORK 💪
+PUT IN THE HOURS ⌚
+AND TAKE WHATS OURS🥶</div>
   <div id="doz"></div>
   <div id="liam"></div>
 </html>

@@ -22,8 +22,44 @@ h1 {
   color: darkslateblue;
 }
 
-#submit {
-  text-align: center;
+#inputSubmit {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  height: 30px;
+  text-align: left;
+}
+/*
+#songlist {
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  height: 40px;
+}*/
+
+#display_text {
+margin: -20px;
+}
+
+#scrollbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  height: 300px;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 40px;
+}
+
+#songbutton {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  height: 40px;
 }
 
 #title {
@@ -35,6 +71,8 @@ h1 {
   text-align: center;
   font-style: italic;
   color: yellowgreen;
+    margin-bottom: 20px;
+
 }
 
 #lucky_button {
@@ -78,6 +116,7 @@ body {
   width: 50%;
   height: 50%;
   float: left;
+  font-size: 3vw;
 }
 
 #doz {
@@ -93,3 +132,4 @@ body {
   height: 50%;
   float: left;
 }
+
