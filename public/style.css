@@ -22,8 +22,12 @@ h1 {
   color: darkslateblue;
 }
 
+form{
+  text-align: center;
+}
+
 #inputSubmit {
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 750px;
@@ -40,7 +44,7 @@ h1 {
 }*/
 
 #display_text {
-margin: -20px;
+  margin: -20px;
 }
 
 #scrollbox {
@@ -55,7 +59,7 @@ margin: -20px;
 }
 
 #songbutton {
-        display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 750px;
@@ -71,8 +75,7 @@ margin: -20px;
   text-align: center;
   font-style: italic;
   color: yellowgreen;
-    margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 
 #lucky_button {
@@ -132,4 +135,3 @@ body {
   height: 50%;
   float: left;
 }
-

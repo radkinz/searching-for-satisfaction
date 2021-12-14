@@ -44,7 +44,7 @@ let phrases = {
   "Hungry" : "banana",
   "Stellar" : "happy",
   "Funny" : "clown",
-  "Horny" : "sex",
+  "😩" : "sex",
   "Trendy" : "new"
 }
 
@@ -57,6 +57,7 @@ app.post('/feelingLucky', (req, res) => {
     res.render('song.html', { Songs: { Title: titles[0] } })
   } else {
     //grab key word
+    console.log(req.body.submit)
     let query = req.body.submit.split(" ")[2];
     let titles = grabsongs(phrases[query]);
     if (titles.length > 3) {
