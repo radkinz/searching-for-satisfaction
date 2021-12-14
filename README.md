@@ -50,3 +50,5 @@ Our product, _Searching for Satisfaction_ (or Lyric Search), allows people to di
 - [X] The UI should be easy to understand. 
 - [X] The product should be easily accessible.
 
+#### **Reflection**
+These past three weeks have been an enjoyable, informative time. Throughout the process, the entire _Searching for Satisfaction_ team has had a chance to test their respective CS skills leading into the end of the academic quarter. In the beginning, we had very ambitious plans and were able to meet most of our goals. Some additions that were not defined in the descriptions. 
