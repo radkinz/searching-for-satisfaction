@@ -36,14 +36,14 @@ The product should be easily accessible.
 
 #### **Functional Requirements:**
 
-*~~It should run without large-scale errors.~~
+~~*It should run without large-scale errors.~~
 *It should take in multiple user inputs, which it can use to search. 
-*~~It should provide the user with a song that aptly matches their inputs.~~
-*~~It should utilize the inputs to search the index.~~
+~~*It should provide the user with a song that aptly matches their inputs.~~
+~~*It should utilize the inputs to search the index.~~
 *It should count the number of times that a page has been visited. 
-*~~It should have a ranking algorithm, which can help a user determine which song might be most appropriate for their desired vibe.~~ 
+~~*It should have a ranking algorithm, which can help a user determine which song might be most appropriate for their desired vibe.~~ 
 *It could be able to have search filters such as “exact phrasing,” which looks through the index for the exact line that has been searched. 
-*~~It could include a video/ audio that is associated with the song on its “page.”~~
+*~~*It could include a video/ audio that is associated with the song on its “page.”~~
 
 #### **Non-Functional Requirements:**
 
