@@ -32,10 +32,9 @@
 
   <form id="submit" method="post">
     <!-- inputs -->
-    <input type="text" name="input_text" id="input_text" autocomplete="off"/>
+    <input type="text" name="input_text" id="input_text" autocomplete="off" />
     <button type="submit" formaction="/searchWord">Submit</button>
 
-  
     <input
       type="submit"
       name="submit"
@@ -44,29 +43,42 @@
       formaction="/feelingLucky"
     />
   </form>
-<div id="scrollbox">
-
-  <div id="songlist">
-    <!-- songs go here -->
-    {{#Songs}}
-    <div id="display_text">
-      <form method="POST" action="/displaySong">
-        <input id="songbutton" type="submit" name="submit" value="{{Title}}" />
-      </form>
-      <br />
+  <div id="scrollbox">
+    <div id="songlist">
+      <!-- songs go here -->
+      {{#Songs}}
+      <div id="display_text">
+        <form method="POST" action="/displaySong">
+          <input
+            id="songbutton"
+            type="submit"
+            name="submit"
+            value="{{Title}}"
+          />
+        </form>
+        <br />
+      </div>
+      {{/Songs}}
     </div>
-    {{/Songs}}
   </div>
-</div>
   <div id="empty"></div>
   <div id="ruby"></div>
-  <div id="dev">ITS ABOUT DRIVE 😤
-ITS ABOUT POWER 🔥
-WE STAY HUNGRY😈
-WE DEVOUR 👹
-PUT IN THE WORK 💪
-PUT IN THE HOURS ⌚
-AND TAKE WHATS OURS🥶</div>
-  <div id="doz"></div>
-  <div id="liam"></div>
+  <div id="dev">
+    ITS ABOUT DRIVE 😤 ITS ABOUT POWER 🔥 WE STAY HUNGRY😈 WE DEVOUR 👹 PUT IN
+    THE WORK 💪 PUT IN THE HOURS ⌚ AND TAKE WHATS OURS🥶
+  </div>
+  <div id="doz">
+    <h2>Doz🐛🦦🦔✨</h2>
+    <br />
+    I'm tired.
+    <br />
+    <img src="images/dog.png" alt="Doz" id="Doz" />
+  </div>
+  <div id="liam">
+    <h2>Liam</h2>
+    <br />
+    💕😍😘😭😒😒😁😔😍👌🏻😘😭😍😩😍😩💕😒😭😒😩😒😒😩😭😭😒😒😭😒😒💕😒😒😔💕😩😭😭😒😭😩😩
+    <br />
+    <img src="images/dab.jpg" alt="Liam" id="Liam" />
+  </div>
 </html>
