@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Searching for Satisfaction</title>
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="client.js" async defer></script>
@@ -32,9 +33,8 @@
 
   <form id="submit" method="post">
     <!-- inputs -->
-    <input type="text" name="input_text" id="input_text"/>
+    <input type="text" name="input_text" id="input_text" autocomplete="off" />
     <button type="submit" formaction="/searchWord">Submit</button>
-
 
     <input
       type="submit"
@@ -44,29 +44,46 @@
       formaction="/feelingLucky"
     />
   </form>
-<div id="scrollbox">
-
-  <div id="songlist">
-    <!-- songs go here -->
-    {{#Songs}}
-    <div id="display_text">
-      <form method="POST" action="/displaySong">
-        <input id="songbutton" type="submit" name="submit" value="{{Title}}" />
-      </form>
-      <br />
+  <div id="scrollbox">
+    <div id="songlist">
+      <!-- songs go here -->
+      {{#Songs}}
+      <div id="display_text">
+        <form method="POST" action="/displaySong">
+          <input
+            id="songbutton"
+            type="submit"
+            name="submit"
+            value="{{Title}}"
+          />
+        </form>
+        <br />
+      </div>
+      {{/Songs}}
     </div>
-    {{/Songs}}
   </div>
-</div>
   <div id="empty"></div>
-  <div id="ruby"></div>
-  <div id="dev">ITS ABOUT DRIVE 😤
-ITS ABOUT POWER 🔥
-WE STAY HUNGRY😈
-WE DEVOUR 👹
-PUT IN THE WORK 💪
-PUT IN THE HOURS ⌚
-AND TAKE WHATS OURS🥶</div>
-  <div id="doz"></div>
-  <div id="liam"></div>
+  <div id="ruby">
+    <div id="overlay"></div>
+    <span class="sticker" data-text="Ruby" style="--shine-angle: 8deg;"
+      ><span>🧛Ruby🧛</span></span
+    >
+    <div id="quotecontainer"><div id="quote"></div></div>
+  </div>
+  <div id="dev">
+    ITS ABOUT DRIVE 😤 ITS ABOUT POWER 🔥 WE STAY HUNGRY😈 WE DEVOUR 👹 PUT IN
+    THE WORK 💪 PUT IN THE HOURS ⌚ AND TAKE WHATS OURS🥶
+  </div>
+  <div id="doz">
+    <h2>Doz🐛🦦🦔✨</h2>
+    I'm tired.
+    <img src="images/dog.png" alt="Doz" id="Doz" />
+  </div>
+  <div id="liam">
+    <h2>Liam</h2>
+    <br />
+    💕😍😘😭😒😒😁😔😍👌🏻😘😭😍😩😍😩💕😒😭😒😩😒😒😩😭😭😒😒😭😒😒💕😒😒😔💕😩😭😭😒😭😩😩
+    <br />
+    <img src="images/dab.jpg" alt="Liam" id="Liam" />
+  </div>
 </html>

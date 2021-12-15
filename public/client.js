@@ -17,3 +17,15 @@ $('#luckybutton').mouseleave(function () {
 function random (max) {
   return Math.floor(max * Math.random())
 }
+
+//grab kanye west quotes for Ruby's div
+async function fetchJoke() {
+    let response = await fetch('https://api.kanye.rest');
+    let data = await response.json();
+    // console.log(data.quote);
+    $("#quote").html('"' + data.quote + '"' + "<p id='kanye'>-Kanye West</p>")
+}
+
+$(document).ready(function() {
+    fetchJoke()
+})

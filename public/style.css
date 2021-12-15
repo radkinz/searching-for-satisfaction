@@ -19,16 +19,27 @@ h1 {
 
 #description {
   text-align: center;
-  color: darkslateblue;
+  color: rgb(31, 211, 235);
+}
+#submit {
+  text-align: center;
+}
+#title {
+  text-align: center;
+  color: blueviolet;
 }
 
-#submit {
-    display: block;
+form {
+  text-align: center;
+}
+
+#inputSubmit {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 750px;
   height: 30px;
-  text-align: center;
+  text-align: left;
 }
 /*
 #songlist {
@@ -40,7 +51,7 @@ h1 {
 }*/
 
 #display_text {
-margin: -20px;
+  margin: -20px;
 }
 
 #scrollbox {
@@ -55,7 +66,7 @@ margin: -20px;
 }
 
 #songbutton {
-        display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 750px;
@@ -71,8 +82,7 @@ margin: -20px;
   text-align: center;
   font-style: italic;
   color: yellowgreen;
-    margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 
 #lucky_button {
@@ -105,10 +115,25 @@ body {
 
 /* Scott Brown stackoverflow  */
 #ruby {
-  background: crimson;
+  background: url('images/spongebob.jpg');
+  background-position: center;
+  background-size: 25% 25%;
   width: 50%;
   height: 50%;
   float: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay {
+  background-color: rgba(220, 20, 60, 0.616);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: 2;
 }
 
 #dev {
@@ -133,3 +158,113 @@ body {
   float: left;
 }
 
+img {
+  width: 150px;
+  height: 150px;
+}
+#Doz {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+
+#Liam {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#kanye {
+  font-style: italic;
+  font-size: large;
+  z-index: 5;
+}
+
+#quote {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgba(238, 260, 250, 0.9);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 5;
+}
+
+#quotecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sticker {
+  --c1: #ef548f;
+  --c2: #ef8b6d;
+  --c3: #cfef6b;
+  --c4: #3bf0c1;
+  --c5: #bb4af0;
+  --shine-angle: 15deg;
+  display: inline-grid;
+  grid-template-areas: 'text';
+  place-items: center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(1rem, 8vw, 5rem);
+  text-transform: uppercase;
+  color: var(--c5);
+  z-index: 5;
+}
+.sticker-lg {
+  font-size: clamp(6rem, 30vw, 20rem);
+}
+.sticker span {
+  background: linear-gradient(
+      var(--shine-angle),
+      rgba(255, 0, 0, 0) 0%,
+      rgba(255, 0, 0, 0) 35%,
+      rgba(255, 255, 255, 0.98) 49.95%,
+      rgba(255, 255, 255, 0.98) 50.15%,
+      rgba(255, 0, 0, 0) 65%,
+      rgba(255, 0, 0, 0)
+    ),
+    linear-gradient(
+      to right,
+      var(--c1),
+      var(--c2),
+      var(--c3),
+      var(--c4),
+      var(--c5)
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.01em rgba(0, 0, 0, 0.6);
+}
+.sticker > *,
+.sticker::before,
+.sticker::after {
+  grid-area: text;
+}
+.sticker::before,
+.sticker::after {
+  content: attr(data-text);
+  color: #fff;
+}
+.sticker::before {
+  -webkit-text-stroke: 0.21em white;
+  background: no-repeat linear-gradient(white, white) 15% 50%/85% 60%;
+}
+.sticker::after {
+  text-shadow: 0.07em 0.08em 0.05em rgba(0, 0, 0, 0.75),
+    -0.07em -0.05em 0.05em rgba(0, 0, 0, 0.75);
+  z-index: -2;
+}

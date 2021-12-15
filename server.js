@@ -49,9 +49,9 @@ let phrases = {
   "Emo" : "hate",
   'Big' : "champion", 
   'Good' : 'yeah', 
-  'Bad' : 'cry', 
-  'Tired' : 'tired'
-
+  'Bad' : 'mad', 
+  'Tired' : 'home',
+  'Sleepy' : 'sleep'
 }
 
 app.post('/feelingLucky', (req, res) => {
