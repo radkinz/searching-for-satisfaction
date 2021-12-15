@@ -22,13 +22,13 @@ h1 {
   color: darkslateblue;
 }
 
-#inputSubmit {
+#submit {
     display: block;
   margin-left: auto;
   margin-right: auto;
   width: 750px;
   height: 30px;
-  text-align: left;
+  text-align: center;
 }
 /*
 #songlist {
