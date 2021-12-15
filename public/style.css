@@ -19,7 +19,14 @@ h1 {
 
 #description {
   text-align: center;
-  color: darkslateblue;
+  color: rgb(31, 211, 235);
+}
+#submit {
+  text-align: center;
+}
+#title {
+  text-align: center;
+  color: blueviolet;
 }
 
 form {
@@ -108,7 +115,7 @@ body {
 
 /* Scott Brown stackoverflow  */
 #ruby {
-  background: url("images/spongebob.jpg");
+  background: url('images/spongebob.jpg');
   background-position: center;
   background-size: 25% 25%;
   width: 50%;
@@ -207,9 +214,9 @@ img {
   --c5: #bb4af0;
   --shine-angle: 15deg;
   display: inline-grid;
-  grid-template-areas: "text";
+  grid-template-areas: 'text';
   place-items: center;
-  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 900;
   font-style: italic;
   font-size: clamp(1rem, 8vw, 5rem);
@@ -221,15 +228,34 @@ img {
   font-size: clamp(6rem, 30vw, 20rem);
 }
 .sticker span {
-  background: linear-gradient(var(--shine-angle), rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0) 35%, rgba(255, 255, 255, 0.98) 49.95%, rgba(255, 255, 255, 0.98) 50.15%, rgba(255, 0, 0, 0) 65%, rgba(255, 0, 0, 0)), linear-gradient(to right, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5));
+  background: linear-gradient(
+      var(--shine-angle),
+      rgba(255, 0, 0, 0) 0%,
+      rgba(255, 0, 0, 0) 35%,
+      rgba(255, 255, 255, 0.98) 49.95%,
+      rgba(255, 255, 255, 0.98) 50.15%,
+      rgba(255, 0, 0, 0) 65%,
+      rgba(255, 0, 0, 0)
+    ),
+    linear-gradient(
+      to right,
+      var(--c1),
+      var(--c2),
+      var(--c3),
+      var(--c4),
+      var(--c5)
+    );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.01em rgba(0, 0, 0, 0.6);
 }
-.sticker > *, .sticker::before, .sticker::after {
+.sticker > *,
+.sticker::before,
+.sticker::after {
   grid-area: text;
 }
-.sticker::before, .sticker::after {
+.sticker::before,
+.sticker::after {
   content: attr(data-text);
   color: #fff;
 }
@@ -238,7 +264,7 @@ img {
   background: no-repeat linear-gradient(white, white) 15% 50%/85% 60%;
 }
 .sticker::after {
-  text-shadow: 0.07em 0.08em 0.05em rgba(0, 0, 0, 0.75), -0.07em -0.05em 0.05em rgba(0, 0, 0, 0.75);
+  text-shadow: 0.07em 0.08em 0.05em rgba(0, 0, 0, 0.75),
+    -0.07em -0.05em 0.05em rgba(0, 0, 0, 0.75);
   z-index: -2;
 }
-
