@@ -33,6 +33,22 @@ form {
   text-align: center;
 }
 
+#input_text {
+  width: 300px;
+  height: 35px;
+  padding-left: 8px;
+  padding-right: 8px;
+    font-size:15px;
+
+}
+
+#submitButton {
+  width:  70px;
+  height: 35px;
+  font-size:15px;
+  
+}
+
 #inputSubmit {
   display: block;
   margin-left: auto;
@@ -63,6 +79,8 @@ form {
   overflow: auto;
   overflow-x: hidden;
   padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #songbutton {
@@ -72,6 +90,8 @@ form {
   width: 750px;
   height: 40px;
 }
+
+
 
 #title {
   text-align: center;
@@ -85,8 +105,11 @@ form {
   margin-bottom: 20px;
 }
 
-#lucky_button {
+#luckybutton {
   text-align: center;
+  height:35px;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 #user_story_header {
