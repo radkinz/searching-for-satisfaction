@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "server.js",
-    "start": "node server.js"
+    "start": "node --optimize_for_size --max_old_space_size=460 dist/server.js"
   },
   "repository": {
     "type": "git",
